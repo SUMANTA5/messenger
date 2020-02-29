@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff"
+    android:fillViewport="true"
+    tools:context=".SignupActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rlRegister"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground">
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"/>
+
+            <ImageView
+                android:id="@+id/imgSinup"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/signup"
+                android:layout_below="@+id/toolbar"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgSinup"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/etds"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="5dp"
+                android:hint="@string/email"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/editFastName"
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etEmail"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/etds"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="5dp"
+                android:hint="Fast Name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/editLastName"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etEmail"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="247dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="247dp"
+                android:layout_toEndOf="@+id/editFastName"
+                android:background="@drawable/etds"
+                android:inputType="text"
+                android:hint="@string/last_name"
+                android:textColor="@color/colorPrimary"
+                android:maxLines="1"
+                android:padding="15dp" />
+            <EditText
+                android:id="@+id/etMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="15dp"
+                android:hint="@string/mobile_number"
+                android:textColor="@color/colorPrimary"
+                android:maxLines="1"
+                android:maxLength="6"
+                android:inputType="number"
+                android:background="@drawable/etds"
+                android:layout_below="@+id/editFastName"
+                android:drawableLeft="@drawable/ic_mobile"
+                android:drawablePadding="5dp"/>
+            <Button
+                android:id="@+id/btSingup"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="120dp"
+                android:background="@drawable/btds"
+                android:text="@string/sing_up"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@+id/etMobileNumber"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
