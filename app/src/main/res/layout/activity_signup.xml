@@ -30,7 +30,7 @@
                 android:layout_below="@+id/toolbar"/>
 
             <EditText
-                android:id="@+id/etEmail"
+                android:id="@+id/etEmailSinup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imgSinup"
@@ -46,56 +46,23 @@
                 android:padding="15dp"
                 android:textColor="@color/colorPrimary" />
 
-            <EditText
-                android:id="@+id/editFastName"
-                android:layout_width="184dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/etEmail"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="6dp"
-                android:background="@drawable/etds"
-                android:drawableLeft="@drawable/ic_name"
-                android:drawablePadding="5dp"
-                android:hint="Fast Name"
-                android:inputType="text"
-                android:maxLines="1"
-                android:padding="15dp"
-                android:textColor="@color/colorPrimary" />
 
             <EditText
-                android:id="@+id/editLastName"
-                android:layout_width="163dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/etEmail"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="9dp"
-                android:layout_marginLeft="247dp"
-                android:layout_marginTop="6dp"
-                android:layout_marginEnd="19dp"
-                android:layout_marginRight="247dp"
-                android:layout_toEndOf="@+id/editFastName"
-                android:background="@drawable/etds"
-                android:inputType="text"
-                android:hint="@string/last_name"
-                android:textColor="@color/colorPrimary"
-                android:maxLines="1"
-                android:padding="15dp" />
-            <EditText
-                android:id="@+id/etMobileNumber"
+                android:id="@+id/etPasswordSinpu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:padding="15dp"
-                android:hint="@string/mobile_number"
+                android:hint="@string/enter_your_password"
                 android:textColor="@color/colorPrimary"
                 android:maxLines="1"
                 android:maxLength="6"
-                android:inputType="number"
+                android:inputType="numberPassword"
                 android:background="@drawable/etds"
-                android:layout_below="@+id/editFastName"
-                android:drawableLeft="@drawable/ic_mobile"
+                android:layout_below="@+id/etEmailSinup"
+                android:drawableLeft="@drawable/ic_pass"
                 android:drawablePadding="5dp"/>
             <Button
                 android:id="@+id/btSingup"
@@ -109,7 +76,7 @@
                 android:textColor="#ffff"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_below="@+id/etMobileNumber"/>
+                android:layout_below="@id/etPasswordSinpu"/>
 
 
         </RelativeLayout>
